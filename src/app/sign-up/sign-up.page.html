@@ -8,10 +8,12 @@
 
   <ion-content>
     <div id="container1">
-    <input type="text" id="username" name="username"  placeholder='Username' required>
-    <input type="email" id="email" name="email"  placeholder='Email' required>
-    <input type="password" id="password" name="password"  placeholder='Password' required>
-    <button expand="block" routerLink="/login" id="Sign_up_button" >Sign Up</button>
+    <form action="/sign-up" method="POST">
+      <input type="text" id="username" name="username"  placeholder='Username' required>
+      <input type="email" id="email" name="email"  placeholder='Email' required>
+      <input type="password" id="password" name="password"  placeholder='Password' required>
+      <button expand="block" routerLink="/login" id="Sign_up_button" >Sign Up</button>
+    </form>
   </div>
   <p>Already have an account? <button  routerLink="/login" id="redirect_signIn">Login</button></p>
   </ion-content>
